@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 002</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+                   }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+                    }
+
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+                    }
+
+        td.num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 5px 5px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <table>
+        <caption>Tabela das Unidades Federativas</caption>
+        <thead>
+               <tr>
+               <th>Estado</th>
+               <th style=" width: 50px;">População</th>
+               </tr>
+        </thead>
+        <tbody>
+                <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>    
+                </tr>
+                <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>    
+                </tr>
+                <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>    
+                </tr>
+        </tbody>
+        <tfoot>
+                <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>84.352.783</strong></td>    
+                </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
