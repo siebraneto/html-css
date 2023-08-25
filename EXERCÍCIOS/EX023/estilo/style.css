@@ -44,7 +44,7 @@ header a, footer a {
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -57,12 +57,26 @@ section {
     font-size: 3.5vh;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
+background-image: url('../imagens/background001.jpg');
+background-position: right center;
+}
+
+section#img02 {
+background-image: url('../imagens/background002.jpg');
+}
+
 section.imagem > p {
     display: inline-block;
-    background-color: rgb(19, 18, 18);
+    background-color: rgba(19, 18, 18, 0.599);
     color: white;
-    width: 400px;
-}
+    width: 45vh;
+    text-shadow: 1px 1px 0px black;
+        }
 
 section.normal {
     background-color: white;
@@ -72,6 +86,9 @@ section.normal {
 section.imagem {
     background-color: rgb(31, 30, 30);
 color: white;
+box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.697);
+background-size: cover;
+background-attachment: fixed;
 }
 
 footer {
